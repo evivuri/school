@@ -1,0 +1,16 @@
+a = list(input())
+c = []
+while len(a) > 0:
+
+    if a[0] == '-' and a[1] == '.':
+        c.append("1")
+        del a[0:2]
+
+    elif a[0] == "-" and a[1] == "-":
+        c.append("2")
+        del  a[0:2]
+    else:
+        c.append("0")
+        del a[0]
+
+print("".join(c))
